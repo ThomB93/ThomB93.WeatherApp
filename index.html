@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Local Weather App</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Custom styles for this template -->
+    <style>
+        body {
+            padding-top: 54px;
+        }
+
+        @media (min-width: 992px) {
+            body {
+                padding-top: 56px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="jumbotron">
+                    <h1>Local Weather App</h1>
+                    <p>See your local weather displayed beautifully using Bootstrap!</p>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Current Location</h4>
+                        <div id="mapholder">
+                        </div>
+                        <p id="location" class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Current Temperature</h4>
+                        <img id="temp_img" class="card-img-top" src="" alt="Show temperature image">
+                        <p id="temp" class="card-text"></p>
+                        <button onclick="toggleTemp()" id="toggleTempBtn" class="btn btn-primary" type="">Fahrenheit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
