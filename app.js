@@ -17,7 +17,7 @@ function toggleTemp() { //toggles between fahrenheit and celcius
 
 function showTemp() { //gets current temperature from API based on current location
     $.ajax({
-        url: "http://api.apixu.com/v1/current.json?key=" + apixuAPIKey + "&q=" + latlon,
+        url: "https://api.apixu.com/v1/current.json?key=" + apixuAPIKey + "&q=" + latlon,
         method: "GET"
     }).then(function (data) {
         var weatherText = data.current.condition.text;
