@@ -22,7 +22,7 @@ function showTemp() { //gets current temperature from API based on current locat
     }).then(function (data) {
         var weatherText = data.current.condition.text;
         var weatherIconUrl = data.current.condition.icon;
-        var fomattedWeatherIconUrl = "http://" + weatherIconUrl.substr(2, weatherIconUrl.length); //formats image from API
+        var fomattedWeatherIconUrl = "https://" + weatherIconUrl.substr(2, weatherIconUrl.length); //formats image from API
         console.log(weatherIconUrl);
         $("#temp_img").attr("src", fomattedWeatherIconUrl);
         if (displayCelcius) {
